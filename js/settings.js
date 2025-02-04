@@ -28,7 +28,7 @@ $(document).ready(function () {
         /* ==========================================================================
          #Text Rotator 
          ========================================================================== */
-        $('#rotate').rotaterator({fadeSpeed: 800, pauseSpeed: 800});
+        $('#rotate').rotaterator({ fadeSpeed: 800, pauseSpeed: 800 });
 
         /* ==========================================================================
          #Orientation change event
@@ -50,8 +50,8 @@ $(document).ready(function () {
  #Progress Bar For Skills Page
  ========================================================================== */
 
-progressBar(99, $('#progressBar'));
-progressBar(80, $('#progressBar2'));
+progressBar(100, $('#progressBar'));
+progressBar(90, $('#progressBar2'));
 progressBar(60, $('#progressBar3'));
 
 /* ==========================================================================
@@ -59,7 +59,7 @@ progressBar(60, $('#progressBar3'));
  ========================================================================== */
 
 var $menu = $('#menu1'),
-        $menulink = $('.menu-link');
+    $menulink = $('.menu-link');
 $menulink.click(function () {
     $menulink.toggleClass('active');
     $menu.toggleClass('active');
@@ -78,8 +78,7 @@ $('nav#menu1 a').click(function () {
 var iPad = navigator.userAgent.toLowerCase().indexOf("ipad");
 var iPhone = navigator.userAgent.toLowerCase().indexOf("iphone");
 var iPod = navigator.userAgent.toLowerCase().indexOf("ipod");
-if (iPad > -1 || iPhone > -1 || iPod > -1)
-{
+if (iPad > -1 || iPhone > -1 || iPod > -1) {
     window.onscroll = function () {
         $('.totop-link').css('position', 'absolute');
         $('.totop-link').css('top', (window.pageYOffset + window.innerHeight - 39) + 'px');
